@@ -22,7 +22,7 @@ import { SocketIOImageHandler } from './shared/sockets/image';
 import { SocketIOChatHandler } from './shared/sockets/chat';
 import apiStats from 'swagger-stats';
 
-const SERVER_PORT = 5000;
+const SERVER_PORT = process.env.PORT;
 const log: Logger = config.createLogger('server');
 
 export function startClient(app: Application): void {
